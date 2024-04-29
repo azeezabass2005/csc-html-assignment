@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Azeez Abass Afolarin">
+    <meta name="description" content="This is my CSC Assigment on HTML..." >
+    <title>CSC Assignment | Azeez Abass | CSC/2022/089</title>
+    <style>
+      *, *::before, *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        min-height: 100vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #5D9CEC40;
+        animation-name: background-anime;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+      }
+      @keyframes background-anime {
+        0% {
+          background: #5D9CEC40;
+        }
+        20% {
+          background: #FC6E5140;
+        }
+        40% {
+          background: #AC92EB40;
+        }
+        60% {
+          background: #48CFAD40;
+        }
+
+        80% {
+          background: #FFCE5440;
+        }
+        100% {
+          background: #ED556440;
+        }
+      }
+      header {
+        position: sticky;
+        top: 0;
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+        background-color: #fff;
+        z-index: 10;
+      }
+      header nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+      }
+      header nav ul li a {
+        color: #5D9CEC;
+        text-decoration: none;
+      }
+      header nav ul li a:hover {
+        color: #5D9CEC;
+        text-decoration: underline;
+      }
+      body main section  {
+        padding: 3rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+      }
+      section h2 {
+        font-size: 30px;
+        line-height: 45px;
+      }
+      p {
+        letter-spacing: 2px;
+        line-height: 24px;
+      }
+      .img {
+        animation-name: computer;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: backwards;
+      }
+      @keyframes computer {
+        0% {
+          scale: 0.9;
+        }
+        50% {
+          scale: 1;
+        }
+        100% {
+          scale: 0.9;
+        }
+      }
+      @media screen and (max-width:1000px) {
+        header {
+          flex-direction: column;
+          justify-content: center;
+          padding: 1rem 2rem;
+          gap: 1rem;
+        }
+        body main section  {
+          flex-direction: column;
+          gap: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="max-width: 900px; background-color: #fff; border: 1px solid #5D9CEC;">
+      <header>
+        <h3>
+          <a href="#home" style="color: #000; text-decoration: none;">Azeez Abass</a>
+        </h3>
+        <nav>
+          <ul>
+            <li><a href="#">Coder</a></li>
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Cycler</a></li>
+          </ul>
+        </nav>
+      </header>
+      <hr />
+      <marquee behavior="" direction="">
+        I use <code>HTML</code>, <code>CSS</code>, <code>Javascript</code>, <code>ReactJs</code>, <code>TailwindCSS</code>, <code>ExpressJS</code>, <code>NodeJS</code> and the likes to design websites.
+      </marquee>
+      <hr />
+      <main>
+        <section id="#home">
+          <div style="max-width: 400px; display: flex; flex-direction: column; gap: 1rem;">
+            <h2>
+              Hello 👋, I'm <span style="color: #5D9CEC;"><i><em>Abass</em></i></span>, A Web Developer 💻, A Student 👨‍🎓 and A Cycler 🚴‍♂️.
+            </h2>
+            <p>
+              My name is Azeez Abass Afolarin. I am a student at Obafemi Awolowo University Ile-Ife, pursuing a degree in computer science with mathematics. I am originally from Ibadan, Nigeria.
+            </p>
+          </div>
+          <div class="img">
+            <svg height="300px" width="300px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.883 511.883" xml:space="preserve" fill="#000000">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <polygon style="fill:#CCD1D9;" points="341.251,479.885 170.618,479.885 191.894,373.316 319.942,373.285 "></polygon>
+                <g>
+                  <path style="fill:#E6E9ED;" d="M511.883,383.909c0,5.905-4.781,10.653-10.67,10.653H10.654C4.78,394.561,0,389.814,0,383.908 V42.651c0-5.889,4.78-10.653,10.654-10.653h490.559c5.889,0,10.67,4.764,10.67,10.653V383.909z"></path>
+                  <path style="fill:#E6E9ED;" d="M341.251,479.885H170.618c-5.874,0-10.654-4.779-10.654-10.653c0-5.905,4.78-10.686,10.654-10.686 h170.633c5.889,0,10.669,4.78,10.669,10.686C351.92,475.107,347.139,479.885,341.251,479.885z"></path>
+                </g>
+                <path style="fill:#656D78;" d="M501.213,31.998H10.654C4.78,31.998,0,36.762,0,42.651v287.926h511.883V42.651 C511.883,36.762,507.102,31.998,501.213,31.998z"></path>
+                <path style="fill:#434A54;" d="M266.595,362.569c0,5.905-4.765,10.685-10.654,10.685c-5.889,0-10.669-4.779-10.669-10.685 c0-5.874,4.78-10.653,10.669-10.653C261.83,351.916,266.595,356.695,266.595,362.569z"></path>
+                <path style="fill:#FC6E51;" d="M373.243,74.644H53.317c-5.89,0-10.669,4.78-10.669,10.669c0,5.89,4.78,10.67,10.669,10.67h319.926 c5.889,0,10.67-4.78,10.67-10.67C383.913,79.424,379.131,74.644,373.243,74.644z"></path>
+                <path style="fill:#AC92EB;" d="M53.317,138.63h170.632c5.89,0,10.654-4.765,10.654-10.654c0-5.905-4.764-10.669-10.654-10.669 H53.317c-5.89,0-10.669,4.764-10.669,10.669C42.647,133.865,47.427,138.63,53.317,138.63z"></path>
+                <path style="fill:#48CFAD;" d="M53.317,181.29h234.618c5.89,0,10.654-4.78,10.654-10.669s-4.765-10.653-10.654-10.653H53.317 c-5.89,0-10.669,4.764-10.669,10.653C42.647,176.51,47.427,181.29,53.317,181.29z"></path>
+                <path style="fill:#5D9CEC;" d="M53.317,223.938l149.293,0.016c5.905,0,10.669-4.78,10.669-10.669 c0-5.889-4.764-10.669-10.669-10.669H53.317c-5.89,0-10.669,4.78-10.669,10.669C42.647,219.173,47.427,223.938,53.317,223.938z"></path>
+                <path style="fill:#FFCE54;" d="M330.581,245.275H53.317c-5.89,0-10.669,4.78-10.669,10.654c0,5.905,4.78,10.67,10.669,10.67h277.264 c5.905,0,10.67-4.765,10.67-10.654C341.251,250.057,336.486,245.275,330.581,245.275z"></path>
+                <path style="fill:#ED5564;" d="M138.625,287.93H53.317c-5.89,0-10.669,4.781-10.669,10.654c0,5.905,4.78,10.686,10.669,10.686 h85.309c5.905,0,10.669-4.78,10.669-10.686C149.295,292.711,144.53,287.93,138.625,287.93z"></path>
+              </g>
+            </svg>
+          </div>
+        </section>
+      </main>
+      <hr />
+      <footer>
+        <p style="font-size: 14px; text-align: center;">
+          &copy; d_exception 2024
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
